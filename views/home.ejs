@@ -1,0 +1,34 @@
+<%- include("./parts/header.ejs")%>
+
+<input type="hidden" id="myId" value="<%= user.id%>">
+<input type="hidden" id="myName" value="<%= user.name%>">
+<input type="hidden" id="room" value="<%= roomName%>">
+<div class="app-con">
+    <div class="chat-box">
+        <div class="chat-box-head">
+            <h4><%= roomName%></h4>
+        </div>
+
+        <div class="chat-box-body">
+            <ul>
+                
+            </ul>
+        </div>
+        <div class="input-collection">
+            <input type="text" placeholder="message ..." class="message-input" id="message">
+            <button id="send">Send</button>
+        </div>
+        
+    </div>
+    <div class="online-users">
+        <h3>Online Users</h3>
+        <ul class="users-lists">
+
+        </ul>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/home.js"></script>
+
+<%- include("./parts/header.ejs")%>

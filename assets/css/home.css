@@ -1,0 +1,196 @@
+.app-con{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.chat-box{
+    width: 70%;
+    height: 100%;
+    background-color: rgb(226, 225, 225);
+    position: relative;
+}
+
+.chat-box-head{
+    width: 100%;
+    background-color: rgba(71, 71, 219, 0.925);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.avatar{
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgb(9, 160, 85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 8px;
+    width: 45px;
+    height: 45px;
+    color: white;
+    font-weight: 600;
+}
+
+.chat-box-head h4{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.online-users{
+    width: 30%;
+    height: 100%;
+}
+
+.online-users h3{
+    color: rgba(71, 71, 219, 0.925);
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.users-lists{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.users-lists .online-user{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.users-lists .online-user .useravatar{
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgb(9, 160, 85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    width: 45px;
+    height: 45px;
+    color: white;
+    font-weight: 600;
+}
+
+.users-lists .online-user .username{
+    color: rgba(71, 71, 219, 0.925);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.chat-box-body{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.chat-box-body ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.chat-box-body ul .item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.chat-box-body ul .item .useravatar{
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgb(9, 160, 85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+    color: white;
+    font-weight: 600;
+}
+
+.chat-box-body ul .item.me{
+    justify-content: flex-start;
+}
+
+.chat-box-body ul .item.other {
+    flex-direction: row-reverse;
+}
+.chat-box-body ul .item.bot {
+     justify-content: center;
+}
+
+.chat-box-body ul .item.me .useravatar{
+    margin-right: 7px;
+}
+
+.chat-box-body ul .item.other .useravatar{
+    margin-left: 7px;
+}
+.chat-box-body ul .item.bot .useravatar{
+    display: none;
+}
+
+.chat-box-body ul .item.me .message{
+    padding: 7px;
+    background-color: rgba(71, 71, 219, 0.925);
+    color: white;
+    border-radius: 50px;
+}
+
+.chat-box-body ul .item.other .message{
+    padding: 7px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+}
+
+.chat-box-body ul .item.bot .message{
+    padding: 7px;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    border-radius: 50px;
+}
+
+.input-collection{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    width: 100%;
+}
+
+.input-collection input{
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 50px;
+    width: 85%;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+.input-collection button{
+    border: none;
+    outline: none;
+    background-color: rgba(71, 71, 219, 0.925);
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    width: 10%;
+}

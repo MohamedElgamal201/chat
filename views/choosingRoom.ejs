@@ -1,0 +1,14 @@
+<%- include("./parts/header.ejs")%>
+
+<form action="/choosingRoom" method="POST" class="choosing-room-form container text-center">
+    <h2 class="choosing-room-form-header text-center mb-3">Join Room</h2>
+    <select class="form-select" aria-label="Default select example" name="room">
+        <option selected>Select Room</option>
+        <option value="ITI">ITI</option>
+        <option value="WEB DEVELOPMENT">WEB DEVELOPMENT</option>
+        <option value="MOBILE DEVELOPMENT">MOBILE DEVELOPMENT</option>
+    </select>
+    <input type="submit" value="Join" class="btn btn-primary mt-3">
+</form>
+
+<%- include("./parts/header.ejs")%>
